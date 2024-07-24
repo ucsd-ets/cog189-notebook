@@ -49,7 +49,7 @@ Docker Hub has modified its free plan, [removing](https://www.docker.com/blog/ch
 - Note: It is recommended to use `pip` instead of `conda` as much as possible. `pip` is more forgiving in resolving package conflicts, and generally much faster.
 
 - Install conda packages
-  - Use `RUN conda install --yes <package1> <package2>` to install all required conda packages in one go
+  - Use `RUN conda install --yes -c conda-forge <package1> <package2>` to install all required conda packages in one go
   - (Optional) Use `RUN conda clean -tipy` to reduce image size
 
 - Install pip packages
